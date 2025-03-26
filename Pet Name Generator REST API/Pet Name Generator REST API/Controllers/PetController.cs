@@ -6,9 +6,9 @@ namespace PetNameGenerator.Controllers
     [Route("generate")]
     public class PetNameController : ControllerBase
     {
-        private string[] dogNames = new string[] { "Buddy", "Max", "Charlie", "Rocky", "Rex" };
-        private string[] catNames = new string[] { "Whiskers", "Mittens", "Luna", "Simba", "Tiger" };
-        private string[] birdNames = new string[] { "Tweety", "Sky", "Chirpy", "Raven", "Sunny" };
+        private string[] dogNames = new string[] { "Brownie", "Whitie", "Blackie", "Rocky", "Vallen","Tristan" };
+        private string[] catNames = new string[] { "Whisky", "Mittens", "Luna", "Souce", "Trix" };
+        private string[] birdNames = new string[] { "Tweetie", "Skay", "Chirpie", "Rayven", "Sunnie" };
 
         [HttpPost]
         public IActionResult GeneratePetName([FromBody] PetNameRequest request)
